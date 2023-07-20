@@ -1,0 +1,112 @@
+$primary-background-color: #e9ecfd;
+$text-color: #1224ca;
+$secondary-background-color: white;
+$line-color: rgb(176, 167, 167);
+
+body {
+  background-color: $primary-background-color;
+}
+.faq {
+  a {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 700;
+  }
+  h1 {
+    letter-spacing: 3px;
+    font-size: 50px;
+  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.item {
+  background-color: $secondary-background-color;
+  border-radius: 9px;
+  padding: 25px;
+  padding-left: 40px;
+  width: 700px;
+  height: 30px;
+  overflow: hidden;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+.circle {
+  background-color: $primary-background-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.question {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+.addition-line {
+  display: flex;
+  hr {
+    margin: 0;
+    background-color: $line-color;
+    margin-top: 17px;
+    width: 1px;
+    border-radius: 9px;
+  }
+  padding-left: 50px;
+  gap: 30px;
+}
+.addition {
+  img {
+    width: 20px;
+  }
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  span {
+    cursor: pointer;
+  }
+}
+.transform-one {
+  transition: transform 1s;
+  transform: rotate(180deg);
+}
+.transform-two {
+  transition: transform 1s;
+  transform: rotate(0deg);
+}
+.transform-three {
+  transition: height 1s;
+  height: 127px;
+}
+.transform-four {
+  transition: height 1s;
+  height: 30px;
+}
+.app {
+  width: 1536px;
+  height: 645px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
